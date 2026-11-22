@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Asif Newaz</title>
+<meta name="description" content="Research by Asif Newaz on trustworthy, data-efficient machine learning: imbalanced learning, biomedical and assistive AI, explainability and fairness, and quantum machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Asif Newaz</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="wrap">
+
+  <section aria-labelledby="overview">
+    <h1 id="overview">Research</h1>
+    <p class="lead">My research develops machine learning that is trustworthy, data-efficient and practical to deploy, particularly when data is imbalanced, scarce or noisy. I apply it to computer vision, healthcare and assistive technology.</p>
+    <p>Full details of each paper are on the <a href="publications.html">Publications</a> page. Code for most projects is on <a href="https://github.com/newaz-aa">GitHub</a>.</p>
+  </section>
+
+  <section aria-labelledby="imbalanced">
+    <h2 id="imbalanced">Learning from imbalanced and scarce data</h2>
+    <p>My M.Sc. thesis asked how the difficulty of individual training instances can guide learning when classes are imbalanced. It led to a set of methods and an experimental study of existing ones.</p>
+
+    <div class="entry">
+      <h3>iCost</h3>
+      <p>A cost-sensitive learning framework that weights the penalty for each training instance by how hard that instance is to learn. Released as an open-source Python package.</p>
+      <p class="entry-links"><a href="https://arxiv.org/abs/2409.13007">arXiv</a> <a href="https://github.com/newaz-aa/iCost">Code</a> <a href="https://pypi.org/project/icost/">PyPI</a></p>
+    </div>
+    <div class="entry">
+      <h3>iBRF</h3>
+      <p>An improved Balanced Random Forest, an ensemble method that resamples the data for each tree to better handle class imbalance.</p>
+      <p class="entry-links"><a href="https://doi.org/10.23919/FRUCT61870.2024.10516372">Paper</a> <a href="https://github.com/newaz-aa/iBRF">Code</a></p>
+    </div>
+    <div class="entry">
+      <h3>UniSyn</h3>
+      <p>A unified sampling framework that addresses class imbalance and class overlap together.</p>
+      <p class="entry-links"><a href="https://github.com/newaz-aa/UniSyn">Code</a></p>
+    </div>
+    <div class="entry">
+      <h3>Evaluation of sampling techniques</h3>
+      <p>Large experimental comparisons of popular and recent resampling methods across many datasets, identifying their limitations and the factors that make imbalanced learning hard.</p>
+      <p class="entry-links"><a href="https://doi.org/10.1109/ICEEICT62016.2024.10534464">Paper</a> <a href="https://github.com/newaz-aa/Sampling-algorithms-experimental-analysis">Code</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="biomedical">
+    <h2 id="biomedical">Biomedical and accessible AI</h2>
+    <p>I build diagnostic models that are explainable and usable outside well-equipped clinics, including systems that work on images captured with a phone.</p>
+
+    <div class="entry">
+      <h3>Arsenicosis diagnosis from mobile-captured skin images</h3>
+      <p>An end-to-end deep learning framework that uses CNNs and vision transformers, explains its predictions with LIME, and includes a web deployment for easy access.</p>
+      <p class="entry-links"><a href="https://arxiv.org/abs/2509.08780">arXiv</a> <a href="https://github.com/newaz-aa/DL-Arsenicosis-Diagnosis">Code</a></p>
+    </div>
+    <div class="entry">
+      <h3>Skin lesion classification on mobile-acquired images</h3>
+      <p>Multiclass classification using CNN and transformer models, with a curated dataset of more than 50 skin disease categories and Grad-CAM interpretability.</p>
+      <p class="entry-links"><a href="https://arxiv.org/abs/2509.04800">arXiv</a> <a href="https://github.com/newaz-aa/skin_lesion_classification_DL">Code</a></p>
+    </div>
+    <div class="entry">
+      <h3>Ovarian cancer decision support</h3>
+      <p>An explainable machine learning system for diagnosis that uses SHAP to examine how algorithm randomness and feature selection can introduce bias, and to identify biomarkers for premenopausal and postmenopausal patients.</p>
+      <p class="entry-links"><a href="https://doi.org/10.1016/j.imu.2024.101553">Paper</a> <a href="https://github.com/newaz-aa/Ovarian_Cancer">Code</a></p>
+    </div>
+    <div class="entry">
+      <h3>Cervical cancer, heart failure and other clinical prediction</h3>
+      <p>Decision support and survival models for cervical cancer, heart failure and other conditions, including survival analysis with random survival forests.</p>
+      <p class="entry-links"><a href="https://doi.org/10.1016/j.knosys.2022.108634">Cervical cancer</a> <a href="https://doi.org/10.1016/j.imu.2021.100772">Heart failure</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="assistive">
+    <h2 id="assistive">Assistive technology: Bangla Braille</h2>
+    <p>I am developing tools that make printed Bangla material accessible to blind readers. The work includes a pipeline that detects Bangla Braille in images such as book pages and translates it to Bangla text with speech output, and automated correction of recognition errors in Braille versions of primary school textbooks. I supervise undergraduate thesis work on this topic.</p>
+    <p class="entry-links"><a href="https://github.com/newaz-aa/Bangla_Braille_OCR">Code</a></p>
+  </section>
+
+  <section aria-labelledby="trust">
+    <h2 id="trust">Explainable and fair AI</h2>
+    <p>I use explainability tools, including SHAP, Grad-CAM and LIME, to check whether clinical and vision models rely on sensible evidence. I am extending this to fairness, asking whether a model's behavior and its explanations hold up across different groups of patients.</p>
+  </section>
+
+  <section aria-labelledby="quantum">
+    <h2 id="quantum">Quantum AI and machine learning</h2>
+    <p>I am currently exploring how quantum computing can be applied to machine learning.</p>
+  </section>
+
+  <section aria-labelledby="data">
+    <h2 id="data">Datasets</h2>
+    <div class="entry">
+      <h3>Electricity demand and load shedding in Bangladesh</h3>
+      <p>A multi-year dataset of daily electricity demand, generation, load shedding and external conditions in Bangladesh, covering November 2019 to December 2024. It was built by extracting the Bangladesh Power Development Board's daily reports. Published in <i>Data in Brief</i>, 2025, with Md. Ikrama Hossain, Tasnia Nafs and Sakif Yeaser.</p>
+      <p class="entry-links"><a href="https://doi.org/10.1016/j.dib.2025.112014">Paper</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="collab">
+    <h2 id="collab">Collaborations</h2>
+    <p>I have worked on machine learning for multimode fiber specklegram sensing with colleagues at King Fahd University of Petroleum and Minerals (KFUPM), which resulted in a review in <a href="https://doi.org/10.1109/JSEN.2023.3298169">IEEE Sensors Journal</a>. I am also part of an ongoing project on log anomaly detection with Western University.</p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>School of Computing, Queen's University, Canada</span>
+    <span>Last updated November 2026</span>
+  </div>
+</footer>
+</body>
+</html>
