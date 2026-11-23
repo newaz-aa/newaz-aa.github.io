@@ -10,6 +10,7 @@ Source for [newaz-aa.github.io](https://newaz-aa.github.io). It is plain HTML an
 | `research.html` | Research |
 | `publications.html` | Full publication list |
 | `teaching.html` | Courses and student supervision |
+| `honors.html` | Honors and awards |
 | `contact.html` | Contact details |
 | `assets/style.css` | The one stylesheet shared by every page |
 | `assets/photo.jpg` | Portrait on the Home page |
